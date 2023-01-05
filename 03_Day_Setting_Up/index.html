@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        // index.js
+// to import the doSomeMath from the math.js with or without extension
+import doSomeMath from './math.js'
+import { addTwo, multiply, subtract } from './math.js'
+import * as everything from './math.js' // to import everything remaining
+
+console.log(doSomeMath.addTwo===addTwo);
+console.log(everything.addTwo===addTwo);
+    </script>
+</body>
+</html>
